@@ -25,6 +25,11 @@ ${data.description}
 - [Usage](#Usage)
 - [Credits](#Credits)
 - [License](#License)
+- [Badges](#Badges)
+- [Features](#Features)
+- [How to Contribute](#How-to-Contribute)
+- [Tests](#Tests)
+- [Questions](#Questions)
 
 ## Installation 
 ${data.installation}
