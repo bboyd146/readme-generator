@@ -50,12 +50,10 @@ function renderLicenseLink(license) {
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
-function renderLicenseSection(license, data) {
-  console.log(license)
-  console.log(data)
-  switch (license, data) {
+function renderLicenseSection(license, name, year) {
+  switch (license) {
     case "MIT License":
-      return `   Copyright ${data.year} ${data.name}
+      return `   Copyright ${year} ${name}
 
       Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
       
@@ -64,7 +62,7 @@ function renderLicenseSection(license, data) {
       THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.`
       break;
     case "Apache License 2.0":
-      return  `   Copyright ${data.year} ${data.name}
+      return  `   Copyright ${year} ${name}
 
       Licensed under the Apache License, Version 2.0 (the "License");
       you may not use this file except in compliance with the License.
@@ -79,7 +77,7 @@ function renderLicenseSection(license, data) {
       limitations under the License.`
       break;
     case "GNU General Public License v3.0":
-      return `    Copyright (C) ${data.year}  ${data.name}
+      return `    Copyright (C) ${year}  ${name}
 
       This program is free software: you can redistribute it and/or modify
       it under the terms of the GNU Affero General Public License as
@@ -96,7 +94,7 @@ function renderLicenseSection(license, data) {
   `
       break;
     case "BSD 2-Clause License":
-      return `Copyright ${data.year} ${data.name}
+      return `Copyright ${year} ${name}
 
       Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
       
@@ -107,7 +105,7 @@ function renderLicenseSection(license, data) {
       THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.`
       break;
     case "Boost Software License 1.0":
-      return `Boost Software License - Version 1.0 - ${data.year}
+      return `Boost Software License - Version 1.0 - ${year}
 
       Permission is hereby granted, free of charge, to any person or organization
       obtaining a copy of the software and accompanying documentation covered by
@@ -161,7 +159,8 @@ ${data.description}
 ${data.installation}
 
 ## Usage 
-${data.usage}
+${data.usage}  
+![alt text](assets/images/${data.screenshot})
 
 ## Credits 
 ${data.credits}
@@ -180,12 +179,13 @@ ${data.features}
 ${data.contribute}
 
 ## Tests
+${data.tests}
 
 ## Questions
 Github username: ${data.git}  
 Link to Github: (https://github.com/${data.git})  
 
-Email: ${data.email}
+Email: ${data.email}  
 Instructions on how to contact: ${data.emaili}  
 `;
 }
