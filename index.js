@@ -32,7 +32,7 @@ const questions = inquirer
         {
             type: 'list',
             message: 'Choose a license for your project.',
-            choices: ['Apache License 2.0','GNU General Public License v3.0','MIT License','BSD 2-Clause "Simplified" License','Boost Software License 1.0'],
+            choices: ['Apache License 2.0','GNU General Public License v3.0','MIT License','BSD 2-Clause License','Boost Software License 1.0'],
             name: 'license',
             validate: function (value){if (value){return true} else return "Value needed to continue"},
         },
