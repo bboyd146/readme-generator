@@ -7,6 +7,18 @@ const questions = inquirer
     .prompt([
         {
             type: 'input',
+            message: 'What is your first and last name?',
+            name: 'name',
+            validate: function (value){if (value){return true} else return "Value needed to continue"},
+        },
+        {
+            type: 'input',
+            message: 'What is the current year?',
+            name: 'year',
+            validate: function (value){if (value){return true} else return "Value needed to continue"},
+        },
+        {
+            type: 'input',
             message: 'What is the name of your project?',
             name: 'title',
             validate: function (value){if (value){return true} else return "Value needed to continue"},
