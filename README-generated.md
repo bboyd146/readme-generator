@@ -1,5 +1,5 @@
-# readme  
-[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+# idk  
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Description
 idk
@@ -26,11 +26,11 @@ idk
 idk
 
 ## License 
-(https://opensource.org/licenses/Apache-2.0)  
+(https://opensource.org/licenses/MIT)  
 undefined
 
 ## Badges
-[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Features
 idk
