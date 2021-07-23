@@ -1,8 +1,8 @@
-# README Generator  
+# README-Generator  
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Description
-idk idk idk
+This app is designed to create a README.md for any developer who wants to spend less time creating this file themselves so that they could focus on the rest of their work.
 
 ## Table of Contents
 
@@ -17,14 +17,14 @@ idk idk idk
 - [Questions](#Questions)
 
 ## Installation 
-idk
+run npm install
 
 ## Usage 
-idk  
+To use, run node index.js through your terminal.. afterwards go through each prompt presented to you so that your input can be generated in the correct readme tab  
 ![alt text](assets/images/)
 
 ## Credits 
-idk
+just me
 
 ## License 
 (https://opensource.org/licenses/MIT)  
@@ -40,17 +40,17 @@ idk
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Features
-idk
+n/a
 
 ## How to Contribute
-idk
+n/a
 
 ## Tests
-idk
+n/a
 
 ## Questions
 Github username: bboyd146  
 Link to Github: (https://github.com/bboyd146)  
 
-Email: bboyd146@gmail.com  
-Instructions on how to contact: idk  
+Email: braddboyd5@gmail.com  
+Instructions on how to contact: click the link to my email, then in the subject put `additional questions`. Afterwards in the message, input your desired question  
