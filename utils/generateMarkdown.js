@@ -50,8 +50,8 @@ function renderLicenseLink(license) {
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
-function renderLicenseSection(license) {
-  switch (license) {
+function renderLicenseSection(license, data) {
+  switch (license, data) {
     case "MIT License":
       return `   Copyright ${data.year} ${data.name}
 
